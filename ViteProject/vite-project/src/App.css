@@ -1,0 +1,132 @@
+
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ========== NAVBAR ========== */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 32px;
+  background-color: #1e293b;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ef4444;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+nav button:hover {
+  background-color: #dc2626;
+}
+
+/* ========== PAGE CONTAINER ========== */
+div {
+  padding: 40px;
+}
+
+/* ========== HEADINGS ========== */
+h1 {
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+/* ========== HOME PAGE ========== */
+p {
+  font-size: 16px;
+  color: #475569;
+}
+
+/* ========== LOGIN PAGE ========== */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ========== DASHBOARD ========== */
+img {
+  display: block;
+  margin: 16px 0;
+  border-radius: 50%;
+  border: 2px solid #2563eb;
+}
+
+pre {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+
+
+/* ===== DASHBOARD DATA VIEW ===== */
+.data-card {
+  margin-top: 24px;
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.data-row:last-child {
+  border-bottom: none;
+}
+
+.data-key {
+  font-weight: 600;
+  color: #1e293b;
+  text-transform: capitalize;
+}
+
+.data-value {
+  color: #475569;
+  max-width: 60%;
+  text-align: right;
+  word-break: break-word;
+}
