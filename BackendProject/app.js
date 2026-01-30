@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "https://oauthprojectfinal-1.onrender.com/",
+    origin: "https://oauthprojectfinal-1.onrender.com",
     credentials: true
   })
 );
@@ -30,7 +30,11 @@ app.use(
   session({
     secret: process.env.SESSION_SECRET,
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
+    cookie:{
+      secure: true,
+      sameSite: "none"
+    }
   })
 );
 
